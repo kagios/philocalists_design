@@ -1,0 +1,148 @@
+{{!-- This is the base layout for your project, and will be used on every page unless specified. --}}
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Philocalists</title>
+    <link rel="stylesheet" href="{{root}}assets/css/app.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/deecf005d3.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+    <!-- Start Navigation Menu -->
+    <!-- Start Navigation Menu Desktop -->
+    <div data-sticky-container>
+      <div class="top-bar show-for-medium sticky " data-sticky data-margin-top="0">
+        <div class="row">
+          <div class="columns large-8 medium-6" id="menu">
+            <ul class="menu dropdown custom" data-dropdown-menu>
+              <li><a class="current" href="index.html">HOME</a></li>
+              <li>
+                <a class="" href="index.html">BLOG</a>
+                <ul class="menu">
+                  <li><a href="index.html">FASHION</a></li>
+                  <li><a href="index.html">LIFESTYLE</a></li>
+                  <li><a href="index.html">TRAVEL</a></li>
+                  <li><a href="index.html">STORY</a></li>
+                </ul>
+              </li>
+              <li></b><a class="" href="index.html">ABOUT</a></li>
+              <li><a class="" href="index.html">CONTACT</a></li>
+            </ul>
+          </div>
+          <div class="columns large-4 medium-6">
+            <ul class="menu dropdown custom float-right" data-dropdown-menu>
+              <li><a><i class="fab fa-facebook-f"></i></a></li>
+              <li><a><i class="fab fa-twitter"></i></a></li>
+              <li><a><i class="fab fa-instagram"></i></a></li>
+              <li><a><i class="fab fa-pinterest"></i></a></li>
+              <li><a><i class="fas fa-envelope"></i></a></li>
+              <li>
+                <button class="button search-button" type="button" data-toggle="example-dropdown-bottom-right"><i class="fas fa-search"></i></button>
+                <input type="search" placeholder="Search Article..." class="dropdown-pane" data-position="bottom" data-alignment="right" id="example-dropdown-bottom-right" data-dropdown data-auto-focus="true">
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- End Navigation Menu Desktop -->
+      <!-- Start Navigation Menu Mobile -->
+      <div class="top-bar hide-for-medium sticky fixed-top" data-sticky data-margin-top="0" data-responsive-toggle="responsive-menu">
+        <button class="menu-icon" type="button" data-toggle="responsive-menu"></button>
+      </div>
+      <div class="top-bar hide-for-medium fixed-top" id="responsive-menu">
+        <div class="top-bar-left">
+          <ul class="vertical dropdown menu accordion-menu" data-accordion-menu>
+            <li><a class="current" href="index.html">HOME</a></li>
+            <li>
+              <a class="" href="index.html">BLOG</a>
+              <ul class="menu vertical nested">
+                <li><a href="index.html">FASHION</a></li>
+                <li><a href="index.html">LIFESTYLE</a></li>
+                <li><a href="index.html">TRAVEL</a></li>
+                <li><a href="index.html">STORY</a></li>
+              </ul>
+            </li>
+            <li></b><a class="" href="index.html">ABOUT</a></li>
+            <li><a class="" href="index.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <div class="top-bar-right">
+          <ul class="menu ">
+            <li><a><i class="fab fa-facebook-f"></i></a></li>
+            <li><a><i class="fab fa-twitter"></i></a></li>
+            <li><a><i class="fab fa-instagram"></i></a></li>
+            <li><a><i class="fab fa-pinterest"></i></a></li>
+            <li><a><i class="fas fa-envelope"></i></a></li>
+            <li>
+              <button class="button search-button" type="button" data-toggle="example-dropdown-bottom-right"><i class="fas fa-search"></i></button>
+              <input type="search" placeholder="Search Article..." class="dropdown-pane" data-position="bottom" data-alignment="right" id="example-dropdown-bottom-right" data-dropdown data-auto-focus="true">
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- End Navigation Menu Mobile -->         
+    </div>
+    <!-- End Navigation Menu -->
+
+    {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
+    {{> body}}
+
+    <footer>
+      <div class="row">
+        <div class="column large-4 medium-4 small-12">
+          <p class="text-center">philocalists LOGO</p>
+        </div>
+        <div class="column large-4 medium-4 small-12">
+          <ul class="vertical dropdown menu accordion-menu" data-accordion-menu>
+            <li><a class="current" href="index.html">HOME</a></li>
+            <li>
+              <a class="" href="index.html">BLOG</a>
+              <ul class="menu vertical nested">
+                <li><a href="index.html">FASHION</a></li>
+                <li><a href="index.html">LIFESTYLE</a></li>
+                <li><a href="index.html">TRAVEL</a></li>
+                <li><a href="index.html">STORY</a></li>
+              </ul>
+            </li>
+            <li></b><a class="" href="index.html">ABOUT</a></li>
+            <li><a class="" href="index.html">CONTACT</a></li>
+          </ul>          
+        </div>
+        <div class="column large-4 medium-4 small-12">
+          <ul class="menu">
+            <li>
+              <p class="text-center">FOLLOW US</p>
+              <ul class="menu">
+                <li><a><i class="fab fa-facebook-f"></i></a></li>
+                <li><a><i class="fab fa-twitter"></i></a></li>
+                <li><a><i class="fab fa-instagram"></i></a></li>
+                <li><a><i class="fab fa-pinterest"></i></a></li>
+                <li><a><i class="fas fa-envelope"></i></a></li>
+              </ul>
+            </li>
+          </ul>          
+        </div>
+      </div>
+
+      <div class="spacer-30"></div>
+
+      <div class="row">
+        <p class="text-center">© 2021 Philocalists All rights are reserved</p>
+      </div>
+    </footer>
+
+    <script src="{{root}}assets/js/app.js"></script>
+
+  </body>
+</html>
