@@ -6,6 +6,9 @@
 @import 'style';
 @import 'util/mixins';
 @import 'util/util';
+@import 'owl.carousel';
+@import 'owl.theme.default';
+@import 'owl.theme.green';
 
 // Global styles
 @include foundation-global-styles;
