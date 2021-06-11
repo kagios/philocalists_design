@@ -405,11 +405,20 @@ margin-bottom: 20px;
 }
 @media print, screen and (max-width: 39.99875em) {
 
+    .about-us-wrapper {
+        h2 {
+            margin-top: 50px;
+            text-align: center;
+        }
+    }
     .main-photo-wrapper {
         height: 300px !important;
     }
     .spacer-250 {
         margin-bottom: 125px !important;
+    }
+    .spacer-600 {
+        margin-bottom: 300px;
     }
     .spacer-700 {
         margin-bottom: 350px !important;
@@ -568,11 +577,35 @@ margin-bottom: 20px;
         width: 150px !important;
     }
 }
+.about-us-wrapper {
+    background-color: white;
+    padding: 100px 25px;
+}
 .navigation-bar {
     font-size: 12px;
     position: absolute;
     top: 0;
+    left: 0;
+    right: 0;
     z-index: 99999;
+    
+    .menu a,button, i{
+        color: white !important;
+    }
+    .fa.fa-bars {
+        font-size: 16px;
+    }
+    .fa.fa-bars:hover {
+        cursor: pointer;
+        font-size: 17px;
+    }
+    .fab, .fas {
+        font-size: 13px !important;
+    }
+    .fab:hover, .fas:hover {
+        font-size: 14px !important;
+        font-weight: bolder;
+    }
 }
 .padding-a {
     padding: 11.2px 16px;
