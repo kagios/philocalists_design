@@ -179,9 +179,12 @@ margin-bottom: 20px;
 }
 .h_500 {
     height: 500px !important;
-}
+}h_700
 .h_600 {
     height: 600px !important;
+}
+.h_700 {
+    height: 700px !important;
 }
 .column {
     .callout {
@@ -411,10 +414,71 @@ margin-bottom: 20px;
         color: white !important;
     }
 }
+.article-title-wrapper {
+    background-color: $black;
+    padding: 100px;
+    color: $white;
+
+    
+    h1 {
+        font-size: 72px;
+        padding: 50px 50px 0 50px;
+    }
+    p {
+        font-size: 24px;
+        padding: 50px;
+        padding: 50px;
+    }
+    .column:first-child{
+        border-right: $white 2px solid;
+        p {
+            font-size: 24px;
+            padding: 0px 50px 50px 50px !important;
+        }
+    }
+
+}
+.article-main-image {
+    display: flex;
+    margin: auto auto 100px auto ;
+}
 @media print, screen and (max-width: 39.99875em) {
+    .main-photo-wrapper {
+        height: 500px !important;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 600px;
+        color: white;
+        background-position:center;
+        background-size: auto;
+        a {
+            color: white !important;
+        }
+    }
+    .article-title-wrapper {
+        padding: 25px !important;
+        height: 100% !important;
+        h1 {
+            font-size: 32px !important;
+        }
+        p {
+            font-size: 18px;
+        }
+        .column:first-child{
+            border-right: none;
+            border-bottom: white 2px solid;
+            p {
+                font-size: 12px;
+            }
+        }    
+    }
+    .article-main-image {
+        margin: auto auto 25px auto ;
+    }
 
     .latest-articles-container {
-        padding: 15px 0px 0px 0px !important;
+        padding: 25px 0px 0px 0px !important;
 
     }
     .about-us-wrapper {
@@ -585,11 +649,22 @@ margin-bottom: 20px;
     a {
         color: black;
     }
+    p {
+        padding: 0.5rem 1rem;
+        margin-bottom: 0;
+    }
     a:hover {
         color: black;
         opacity: 0.8;
     }
+    li {
+        font-size: 13px;
+        i {
+            font-size: 11px !important;
+        }
+    }
 }
+
 #offCanvasMenu {
 
     a, .fab, .fas, .fa {
