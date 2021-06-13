@@ -34,9 +34,8 @@ a {
     color: $black !important;
 } */
 li {
-    a:hover, a:focus {/* 
-        font-size: 14px; */
-        text-decoration: underline !important;
+    a:hover, a:focus {
+        font-weight: bolder;
     }
 }
 .top-bar {
@@ -84,7 +83,16 @@ footer {
     padding: 50px 50px 0px 50px ;
     font-size: 12px;
      a {
-         color: $black;
+        color: $black;
+     }
+     a:hover {
+        color: $black !important;
+        text-decoration: none !important;
+        opacity: 0.8;
+        font-weight: bolder;
+     }
+     i:hover {
+        font-weight: bolder;
      }
     .vertical.dropdown.menu.accordion-menu {
         text-align: center;
@@ -114,8 +122,20 @@ footer {
 .spacer-200 {
     margin-bottom: 200px;
 }
+.spacer-150 {
+    margin-bottom: 150px;
+}
 .spacer-100 {
     margin-bottom: 100px;
+}
+.spacer-90 {
+    margin-bottom: 90px;
+}
+.spacer-65 {
+    margin-bottom: 65px;
+}
+.spacer-60 {
+    margin-bottom: 60px;
 }
 .spacer-50 {
     margin-bottom: 50px;
@@ -126,11 +146,17 @@ margin-bottom: 40px;
 .spacer-30 {
     margin-bottom: 30px;
 }
-.spacer-10 {
-margin-bottom: 10px;
+.spacer-25 {
+margin-bottom: 25px;
 }
 .spacer-20 {
 margin-bottom: 20px;
+}
+.spacer-15 {
+margin-bottom: 15px;
+}
+.spacer-10 {
+margin-bottom: 10px;
 }
 
 /* 
@@ -179,7 +205,7 @@ margin-bottom: 20px;
 }
 .h_500 {
     height: 500px !important;
-}h_700
+}
 .h_600 {
     height: 600px !important;
 }
@@ -402,18 +428,36 @@ margin-bottom: 20px;
 .column, .columns, .column:last-child:not(:first-child), .columns:last-child:not(:first-child) {
     float: left !important;
 }
+.about-logo {
+    height: 280px;
+    width: 280px;
+    margin: 0px auto;
+    display: block;
+}
+.main-logo {
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+}
 .main-photo-wrapper {
     position: absolute;
     top: 0;
     width: 100%;
     height: 600px;
     color: white;
+    background-image: url('/assets/img/main_photo.jpg');
     background-position:center;
-    background-size: auto;
+    background-size: cover;
     a {
         color: white !important;
     }
-}
+}/* 
+.article-image-wrapper {
+    background-color: $black;
+} */
 .article-title-wrapper {
     background-color: $black;
     padding: 100px;
@@ -443,6 +487,13 @@ margin-bottom: 20px;
     margin: auto auto 100px auto ;
 }
 @media print, screen and (max-width: 39.99875em) {
+    .menu-logo {
+        font-size: 13px;
+    }
+    .about-logo {
+        height: 60% !important;
+        width: 60% !important;
+    }
     .main-photo-wrapper {
         height: 500px !important;
         position: absolute;
@@ -451,7 +502,10 @@ margin-bottom: 20px;
         height: 600px;
         color: white;
         background-position:center;
-        background-size: auto;
+        background-size: center;
+        height: 300px !important;
+        background-size: cover !important;
+        font-size: 10px !important;
         a {
             color: white !important;
         }
@@ -476,19 +530,25 @@ margin-bottom: 20px;
     .article-main-image {
         margin: auto auto 25px auto ;
     }
-
+    .main-logo {
+        width: 120px !important;
+        height: 120px !important;
+    }
     .latest-articles-container {
         padding: 25px 0px 0px 0px !important;
 
     }
     .about-us-wrapper {
+        padding: 0px 7px !important;
         h2 {
-            margin-top: 50px;
             text-align: center;
         }
     }
-    .main-photo-wrapper {
-        height: 300px !important;
+    .spacer-100 {
+        margin-bottom: 30px !important;
+    }
+    .spacer-90 {
+        margin-bottom: 30px !important;
     }
     .spacer-250 {
         margin-bottom: 125px !important;
@@ -511,7 +571,9 @@ margin-bottom: 20px;
     .h_600 {
         height: 300px !important;
     }
-
+    footer {
+        padding-top: 0 !important;
+    }
     .article-text {
         font-size: 11px !important;
     }
@@ -698,14 +760,15 @@ margin-bottom: 20px;
     }
     .fa.fa-bars:hover {
         cursor: pointer;
-        font-size: 17px;
+        font-weight: bolder;
+        box-shadow: 0px 0px 5px 1px rgba(10, 10, 10, 0.2);
     }
     .fab, .fas {
         font-size: 13px !important;
     }
     .fab:hover, .fas:hover {
-        font-size: 14px !important;
         font-weight: bolder;
+        box-shadow: 0px 0px 5px 1px rgba(10, 10, 10, 0.2);
     }
 }
 .padding-a {
