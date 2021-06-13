@@ -1,5 +1,4 @@
 
-{{!-- This is the base layout for your project, and will be used on every page unless specified. --}}
 
 <!doctype html>
 <html class="no-js" lang="en">
@@ -8,7 +7,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Philocalists</title>
-    <link rel="stylesheet" href="{{root}}assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/app.css">
     <script src="https://kit.fontawesome.com/deecf005d3.js" crossorigin="anonymous"></script>
     <link rel="icon" href="../assets/img/logo_white.png" type="image/png" sizes='72x72'>
   </head>
@@ -30,6 +29,7 @@
             </ul>
           </li>
           <li></b><a class="" href="about.html">ABOUT</a></li>
+          <li><a class="" href="contact.html">CONTACT</a></li>
       </div>
       <div class="column large-4 medium-6 show-for-medium">
         <ul class="menu float-right">
@@ -63,6 +63,7 @@
               </ul>
             </li>
             <li></b><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
             <li class="padding-a"><u>FOLLOW US</u></a></li>
             <li><a><i class="fab fa-facebook-f"></i> FACEBOOK</a></li>
             <li><a><i class="fab fa-twitter"></i> TWITTER</a></li>
@@ -80,8 +81,64 @@
     </div>
     <!-- End Navigation Menu -->
 
-    {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
-    {{> body}}
+    <!-- Start Logo -->
+    <div class="category-photo-wrapper" data-src="/assets/img/main_photo.jpg">
+        <div class="spacer-100"></div>
+        <img class="main-logo" src="/assets/img/logo_white.png">
+        <h1>CONTACT US</h1>
+    </div>
+    <div class="clearfix"></div>
+    <div class="spacer-600"></div>
+    <div class="clearfix"></div>
+    <!-- End Logo -->
+    
+    <div class="row">
+        <div class="wrap-contact100">
+            <form class="contact100-form validate-form">
+                <div class="column large-6 small-12">
+                    <label class="label-input100" for="first-name">Όνομα *</label>
+                    <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Type first name">
+                        <input id="first-name" class="input100" type="text" name="first-name" placeholder="Όνομα">
+                        <span class="focus-input100"></span>
+                    </div>
+                </div>
+                <div class="column large-6 small-12">
+                    <label class="label-input100" for="last-name">Επίθετο *</label>
+                    <div class="wrap-input100 rs2-wrap-input100 validate-input" data-validate="Type last name">
+                        <input class="input100" type="text" name="last-name" placeholder="Επίθετο">
+                        <span class="focus-input100"></span>
+                    </div>
+                </div>
+                <div class="column large-6 small-12">
+                    <label class="label-input100" for="email">Εmail *</label>
+                    <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+                        <input id="email" class="input100" type="text" name="email" placeholder="π.χ. example@email.com">
+                        <span class="focus-input100"></span>
+                    </div>
+                </div>
+                <div class="column large-6 small-12">
+                    <label class="label-input100" for="phone">Τηλέφωνο</label>
+                    <div class="wrap-input100">
+                        <input id="phone" class="input100" type="text" name="phone" placeholder="π.χ. +30 800 000000">
+                        <span class="focus-input100"></span>
+                    </div>
+                </div>
+                <div class="column large-12 small-12">
+                    <label class="label-input100" for="message">Message *</label>
+                    <div class="wrap-input100 validate-input" data-validate = "Message is required">
+                        <textarea style="height: 200px;" id="message" class="input100" name="message" placeholder="Write us a message"></textarea>
+                        <span class="focus-input100"></span>
+                    </div>
+    
+                    <div class="container-contact100-form-btn">
+                        <button class="contact100-form-btn primary_button">
+                            Αποστολή
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
 
     <!-- Start Footer -->
     <div class="clearfix"></div>
@@ -98,6 +155,7 @@
             <li><a href="category.html">TRAVEL</a></li>
             <li><a href="category.html">STORY</a></li>
             <li></b><a class="" href="about.html">ABOUT</a></li>
+            <li><a class="" href="contact.html">CONTACT</a></li>
           </ul>
         </div>
         <div class="column large-4 medium-4 small-12">
@@ -118,7 +176,7 @@
     </footer>
     <!-- End Footer -->
 
-    <script src="{{root}}assets/js/app.js"></script>
+    <script src="assets/js/app.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.boomcdn.com/libs/owl-carousel/2.3.4/owl.carousel.min.js"></script>
 
