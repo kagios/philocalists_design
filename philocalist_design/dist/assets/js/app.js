@@ -22629,7 +22629,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).foundation();
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /home/psiska/Workplace/philocalists_design_git/philocalists_design/philocalist_design/src/assets/js/app.js */"./src/assets/js/app.js");
+module.exports = __webpack_require__(/*! /home/psiska/Workplace/philocalist_design_git/philocalists_design/philocalist_design/src/assets/js/app.js */"./src/assets/js/app.js");
 
 
 /***/ })
