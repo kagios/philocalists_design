@@ -501,6 +501,9 @@ margin-bottom: 10px;
     margin: auto auto 100px auto ;
 }
 @media print, screen and (max-width: 39.99875em) {
+    body {
+        overflow-x: hidden !important;
+    }
     .navigation-bar .fa.fa-bars {
         font-size: 24px !important;
     }
