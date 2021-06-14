@@ -1,27 +1,17 @@
+<!-- Start article-image -->
+<div class="article-image-wrapper" data-src="https://2.bp.blogspot.com/-ErlovyvpO3o/WyGT6Vm017I/AAAAAAAAKSk/Qsoy7V4sK-kk_bkCeImrkUQIK3_X9uKjACLcBGAs/s1600/ian-dooley-347962-1240x826.jpg" style="background-image: url('https://2.bp.blogspot.com/-ErlovyvpO3o/WyGT6Vm017I/AAAAAAAAKSk/Qsoy7V4sK-kk_bkCeImrkUQIK3_X9uKjACLcBGAs/s1600/ian-dooley-347962-1240x826.jpg');">
+</div>
+<!-- End article-image -->
+
 <!-- Start Title -->
 <div class="article-title-wrapper" >
-    <div class="row">
-        <div class="colums large-up-2 small-up-1">
-            <div class="column">
-                <h1>Article Title</h1>
-                <h4>Category</h4>
-                <p>June 13, 2021 / by Author Name</p>
-            </div>
-            <div class="column">
-                <p>Lorem ipsum eu usu assum liberavisse, ut munere praesent complectitur mea. Sit an option maiorum principes. Ne per probo magna idque, est...</p>
-            </div>
-        </div>
-    </div>
+    <h1>Article Title</h1>
+    <h3>Category</h3>
+    <p>June 13, 2021 / by Author Name</p>
 </div>
 <!-- End Title -->
 
 <div class="spacer-15"></div>
-
-<!-- Start article-image -->
-<div class="article-image-wrapper">
-    <img class="article-main-image" src="https://2.bp.blogspot.com/-ErlovyvpO3o/WyGT6Vm017I/AAAAAAAAKSk/Qsoy7V4sK-kk_bkCeImrkUQIK3_X9uKjACLcBGAs/s1600/ian-dooley-347962-1240x826.jpg">
-</div>
-<!-- End article-image -->
 
 <!-- Start article-text -->
 <div class="row">
@@ -83,36 +73,36 @@
 <!-- End article-text -->
 
 <!-- Start Promoted Articles -->
-<div class="spacer-100"></div>
 <div class="latest-articles-container">
-  <div class="columns"><h4>Related Articles</h4></div>
-  <div class="clearfix"></div>
-  <div class="spacer-10"></div>
-  <div class="columns large-3 small-4 medium-3">
-    {{>_small-article}}
+    <div class="column">
+      <div class="divider">
+        <h4 class="text-center"><span>Related Articles</span></h4>
+        <div class="spacer-50"></div>
+      </div>
+    </div>
+  
     <div class="clearfix"></div>
-    <div class="spacer-50"></div>
-  </div>
-  <div class="columns large-3 small-4 medium-3">
-    {{>_small-article}}
-    <div class="clearfix"></div>
-    <div class="spacer-50"></div>
-  </div>
-  <div class="columns large-3 small-4 medium-3">
-    {{>_small-article}}
-    <div class="clearfix"></div>
-    <div class="spacer-50"></div>
-  </div>
-  <div class="columns large-3 small-4 medium-3 hide-for-small-only">
-    {{>_small-article}}
-    <div class="clearfix"></div>
-    <div class="spacer-50"></div>
-  </div>
+    <div class="columns large-4 small-12 medium-4">
+      {{>_small-article}}
+      <div class="clearfix"></div>
+      <div class="spacer-50"></div>
+    </div>
+    <div class="columns large-4 small-12 medium-4">
+      {{>_small-article}}
+      <div class="clearfix"></div>
+      <div class="spacer-50"></div>
+    </div>
+    <div class="columns large-4 small-12 medium-4">
+      {{>_small-article}}
+      <div class="clearfix"></div>
+      <div class="spacer-50"></div>
+    </div>
 </div>
 <!-- End Promoted Articles -->
 
 <!-- Start Newsletter Form -->
-<div class="row">  
+<div class="clearfix"></div>
+<div class="row">
   {{> _subscribe-banner}}
 </div>
 <!-- End Newsletter Form -->
